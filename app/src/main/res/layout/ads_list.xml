@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/adThumb"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp" />
+
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/adTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="5dp"
+            android:padding="2dp"
+            android:textColor="#33CC33" />
+
+        <TextView
+            android:id="@+id/adDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Breve descricao"
+            android:layout_marginLeft="3dp"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/adExpiresOn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expira em 2h"
+            android:layout_marginLeft="3dp"/>
+
+    </LinearLayout>
+
+    <TextView android:id="@+id/adId" android:visibility="invisible" android:layout_width="80dp" android:layout_height="80dp" />
+
+</LinearLayout>
